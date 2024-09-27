@@ -6,21 +6,22 @@ https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab0
 Pseudo code
 
 
-This this needs
-
-
 Overall structure: a columnn
 
-Make these divs inside body
-
-
+Div it up! 
 
 - Header 
+    headerleft, headerright
 - Hero
+    heroleft, heroright
 - Information
+    infoheading, infoboxes, infotextboxes
 - Quotebox
+    quote, source
 - CTA box
+    ctaheading, ctatext, ctabutton
 - Footer
+    footertext
 
 
 Filling in the divs
@@ -47,7 +48,7 @@ Header Logo Text
 24px #F9FAF8
 
 Button color, call to action background color
-#3882F6
+c
 
 information header text: 36px #1F2937 weight: 900
 
@@ -63,3 +64,8 @@ Two approaches
 
 - one div at a time. After it works, move on to the next one.
 - Build all divs, then fuck around with flexbox until they do what you want...
+
+NOTES
+
+- I could have / should have 
+used semantic html classes already. https://www.w3schools.com/html/html5_semantic_elements.asp

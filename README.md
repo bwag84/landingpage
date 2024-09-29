@@ -48,7 +48,7 @@ Header Logo Text
 24px #F9FAF8
 
 Button color, call to action background color
-c
+#3882F6
 
 information header text: 36px #1F2937 weight: 900
 

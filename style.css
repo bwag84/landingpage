@@ -1,6 +1,6 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
+    /*box-sizing: border-box;*/
+    padding: 0%;
     margin: 0;
 }
 
@@ -77,20 +77,26 @@ ul {
     margin: 128px;
 }
 
+.heroh1 {
+    color: #F9FAF8;
+    padding-bottom: 8px;
+}
+.herotext {
+    color:#E5E7EB;
+    padding-bottom: 8px;
+}
 
+/* INFORMATION BEGINS HERE */
 
 .information {
     display: flex;
     flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
     margin: 128px;
+    
 }
 
 .infoheading {
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .infoboxes {
@@ -99,30 +105,23 @@ ul {
 }
 
 .infobox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+
     border: 4px solid #3882F6;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 16px;
     padding: 16px;
     width: 160px;
     height: 160px;
-    
-    
 
 }
 
 .infotextboxes {
-    box-sizing: border-box;
-    gap: 16px;
-    padding: 8px;
-    display: flex;
-    justify-content: space-evenly;
-    text-wrap: wrap;
+    display: flex;    
     text-align: center;
 }
+
+
+/*STAT OF QUOTEBOX ================ */
 
 .quotebox {
     display: flex;
@@ -149,8 +148,6 @@ ul {
 }
 .source {
     display: flex;
-    justify-content: center;
-    align-self: flex-end;
     
     
 }
@@ -158,6 +155,16 @@ ul {
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
+}
+
+
+.qmiddle {
+    flex-grow: 0;
+}
+
+.qleft,
+.qright {
+    flex-grow: 0;
 }
 
 .ctaboxdaddy {
@@ -187,12 +194,7 @@ ul {
 
 }
 
-.heroh1 {
-    color: #F9FAF8;
-}
-.herotext {
-    color:#E5E7EB;
-}
+
 .signup {
     background-color: #3882F6;
     color: #F9FAF8;

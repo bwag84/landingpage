@@ -96,11 +96,16 @@ ul {
 }
 
 .infoheading {
-    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
 }
 
 .infoboxes {
     display: flex;
+    justify-content: space-evenly;
+    padding: 16px;
+    ;
     
 }
 

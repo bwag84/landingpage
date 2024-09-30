@@ -12,12 +12,15 @@ body {
 }
 a {
     text-decoration: none;
+    color: white;
 }
 
 ul {
     list-style-type: none ;
+    
 }
 
+/*HEADER STARTS HERE */
 
 .header {
     height: 64px;
@@ -26,8 +29,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .headerleft {
@@ -46,7 +47,7 @@ ul {
     border: white 1px;
     padding: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     margin: 128px;
@@ -60,15 +61,13 @@ ul {
     gap: 16px;
 }
 
-
+/* HEADER ENDS, HERO STARTS */
 
 .hero {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;   
+    flex-direction: row;
     background-color:#1F2937;
-    
+    justify-content: space-evenly;    
 
 }
 
@@ -84,6 +83,20 @@ ul {
 .herotext {
     color:#E5E7EB;
     padding-bottom: 8px;
+    word-wrap: break-word;
+    width: 256px;
+}
+
+.signup {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 8px;
+    display: flex;
+    flex: 1;
+    font-size: large;
+    padding: 4px 16px 4px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* INFORMATION BEGINS HERE */
@@ -101,114 +114,147 @@ ul {
     padding: 16px;
 }
 
-.infoboxes {
+.boxcontainer {
     display: flex;
     justify-content: space-evenly;
     padding: 16px;
-    ;
+    flex-direction: row;
+    
     
 }
 
-.infobox {
+.boxrow {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.infobox {
     border: 4px solid #3882F6;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 16px;
     padding: 16px;
     width: 160px;
     height: 160px;
+    flex-direction: column;
+    
 
 }
 
-.infotextboxes {
-    display: flex;    
+.infotext {
+    display: flex; 
     text-align: center;
+    width: 160px;
+    padding: 16px;
 }
 
 
-/*STAT OF QUOTEBOX ================ */
+
+/*START OF QUOTEBOX ================ */
 
 .quotebox {
     display: flex;
     background-color: #E5E7EB;
     height: 300px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .quote {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    text-wrap: wrap;
-    margin: 128px;
+    display: flex;    
+
+
 }
 .quotepara {
     display: flex;
-    text-align: center;
-    justify-content: center;
-    text-wrap: wrap;
     font-style: italic;
+    text-align: center;
+    text-wrap: wrap;
+    width: 640px;
+    font-size: x-large;
 }
 .source {
     display: flex;
-    
-    
+    align-self: center;
+    margin-right: 128px;
+    font-weight: bold;
 }
 .sourcep {
     display: flex;
-    justify-content: flex-end;
+    align-self: flex-end;
     font-weight: bold;
 }
 
+/*START CTA BOX */
 
-.qmiddle {
-    flex-grow: 0;
-}
 
-.qleft,
-.qright {
-    flex-grow: 0;
-}
-
-.ctaboxdaddy {
+.ctacontainer {
+    background-color: white;
     display: flex;
     justify-content: center;
-    height: 300px;
+
 }
 
-.ctabox {
+.ctabluebox {
     display: flex;
-    background-color: #3882F6;
-    border-radius: 8px;
-    margin: 64px;
-    justify-content: center;
     align-items: center;
-    padding: 16px;
-    color: white;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: #1f2937;
-    flex: 1;
-    color: white;
-    height: 64px;
-
-}
-
-
-.signup {
+    justify-content: space-evenly;
     background-color: #3882F6;
-    color: #F9FAF8;
-    border-radius: 8px;
+    width: 900px;
+    height: 128px;
+    margin: 64px;
+    border-radius: 16px;
+    color: white;
+
+}
+.leftbox {
     display: flex;
-    flex: 1;
+
+}
+
+.rightbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnbox {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.buttonbottom a {
+    color: white;
+    background-color: none;
+    border-color: white;
+    border: 2px solid;
+    border-radius: 8px;
     font-size: large;
     padding: 4px 16px 4px;
-    justify-content: center;
-    align-items: center;
+
+
+
+
 }
 
+
+
+
+
+/*START FOOTER */
+
+.footer {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: white;
+    
+
+}
+.footertext {
+   font-weight: lighter;
+}
